@@ -225,7 +225,7 @@ def parse_transaction(message: str) -> Transaction | None:
             return None
 
     else:
-        print("Non-transaction message received:", message, color="yellow")
+        print("Message received:", message, color="yellow")
         return None
 
 

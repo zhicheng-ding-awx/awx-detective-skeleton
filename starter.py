@@ -258,7 +258,7 @@ async def listen_to_transactions(ssl_context: ssl.SSLContext, jwt: str) -> None:
                     await websocket.send(json.dumps(decision))
 
         except websockets.exceptions.ConnectionClosed as e:
-            print(f"Connection closed: {e.code}", color="magenta")
+            print(f"Connection closed: {e.code}, reason: {e.reason}", color="magenta")
         except Exception as e:
             print(f"Error: {e}", color="magenta")
 

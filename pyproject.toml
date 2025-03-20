@@ -1,0 +1,17 @@
+[project]
+name = "awx-detective-skeleton"
+version = "0.1.0"
+description = "Skeleton code for the Airwallex Transaction Detective Challenge"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "certifi>=2025.1.31",
+    "print-color>=0.4.6",
+    "requests>=2.32.3",
+    "websockets>=15.0.1",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.11.0",
+]
